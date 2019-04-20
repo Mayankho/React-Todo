@@ -2,11 +2,20 @@
 // feel free to change this component.js into TodoList.js
 import React from 'react'
 
-class TodoList extends React.Component {
-    constructor(){
-        super();
-        
+const TodoList = props => {
+    const sortedTodo = props.items.sort(a,b) => {
+        a.proppy.completed - b.proppy.completed
     }
+    return(
+        <div className = "todo-list">
+            {sortedTodo.map(item => {
+
+            })}
+
+        </div>
+
+    )
+    
 }
 
 
